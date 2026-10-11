@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff8f2" />
+    <meta name="description" content="A small, soft place made for Nishu, with tulips, penguins, and a pocketful of reassurance." />
+    <title>For Nishu, with love</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B7%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <canvas id="scribble-canvas" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#main-content">Skip to the good part</a>
+    <div class="site-shell">
+      <header class="topbar" aria-label="Page header">
+        <a class="wordmark" href="#top" aria-label="For Nishu, with love — home">
+          <span class="wordmark-mark" aria-hidden="true">✳</span>
+          <span>for nishu<span class="wordmark-dot">.</span></span>
+        </a>
+        <div class="topbar-note"><span class="topbar-heart" aria-hidden="true">♥</span> made with extra softness</div>
+      </header>
+
+      <main id="main-content">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> a tiny corner of the internet, just for you</p>
+            <h1 id="hero-title">Hi Nishu.<br /><em>Come here,</em><br />you’re loved.</h1>
+            <p class="hero-intro">If today feels a little too loud, stay here for a minute. There are tulips in bloom, a little animated heart, and absolutely no pressure to be anything other than you.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#notes">open a little note <span aria-hidden="true">↘</span></a>
+              <button class="button button-quiet" id="hug-button" type="button"><span class="button-icon" aria-hidden="true">♡</span> send a warm hug</button>
+            </div>
+            <p class="hero-caption"><span aria-hidden="true">✦</span> today’s forecast: 100% chance of being cared for</p>
+            <button class="scribble-help" id="scribble-help" type="button" aria-pressed="false"><span aria-hidden="true">✎</span> long-press phone · right-click PC</button>
+          </div>
+
+          <div class="hero-art" aria-label="A floating animated heart made for Nishu">
+            <div class="art-sticker sticker-top"><span aria-hidden="true">✿</span><strong>you are<br />a soft place</strong></div>
+            <div class="art-sun" aria-hidden="true"></div>
+            <div class="art-halo" aria-hidden="true"></div>
+            <div class="hero-heart-wrap">
+              <div class="hero-heart" aria-hidden="true"><span>♡</span></div>
+              <span class="hero-heart-spark heart-spark-one" aria-hidden="true">✦</span>
+              <span class="hero-heart-spark heart-spark-two" aria-hidden="true">✿</span>
+              <span class="hero-heart-spark heart-spark-three" aria-hidden="true">✧</span>
+            </div>
+            <div class="art-ground" aria-hidden="true"></div>
+            <div class="art-sticker sticker-bottom"><span aria-hidden="true">♡</span> pocket-sized<br />comfort</div>
+            <span class="floating-flower flower-one" aria-hidden="true">✽</span>
+            <span class="floating-flower flower-two" aria-hidden="true">✿</span>
+            <span class="floating-flower flower-three" aria-hidden="true">✽</span>
+          </div>
+        </section>
+
+        <section class="ticker" aria-label="A little reminder">
+          <div class="ticker-track">
+            <span>you don’t have to earn rest</span><span aria-hidden="true">✳</span><span>you are allowed to take it slow</span><span aria-hidden="true">✳</span><span>you don’t have to earn rest</span><span aria-hidden="true">✳</span><span>you are allowed to take it slow</span><span aria-hidden="true">✳</span>
+          </div>
+        </section>
+
+        <section class="intro-section section-pad" aria-labelledby="garden-title">
+          <div class="section-kicker">01 / the comfort garden</div>
+          <div class="intro-grid">
+            <div>
+              <h2 id="garden-title">A few things<br /><em>worth remembering.</em></h2>
+            </div>
+            <div class="intro-aside">
+              <p>These little flowers are proof that gentle things can still be brave. Tap one when you need a reminder; they’ve been waiting patiently for you.</p>
+              <div class="mini-rule" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+
+          <div class="garden" id="garden">
+            <article class="garden-card garden-card-pink">
+              <div class="garden-number">01</div>
+              <div class="tulip tulip-pink" aria-hidden="true"><span class="tulip-bloom"></span><span class="tulip-stem"></span><span class="tulip-leaf leaf-left"></span><span class="tulip-leaf leaf-right"></span></div>
+              <h3>You are doing<br />better than you think.</h3>
+              <button class="text-button bloom-button" type="button" data-message="Even on wobbly days, you are still growing.">make it bloom <span aria-hidden="true">↗</span></button>
+              <p class="card-message" aria-live="polite"></p>
+            </article>
+            <article class="garden-card garden-card-yellow">
+              <div class="garden-number">02</div>
+              <div class="tulip tulip-yellow" aria-hidden="true"><span class="tulip-bloom"></span><span class="tulip-stem"></span><span class="tulip-leaf leaf-left"></span><span class="tulip-leaf leaf-right"></span></div>
+              <h3>Softness is not<br />a weakness.</h3>
+              <button class="text-button bloom-button" type="button" data-message="The world needs the tender way you notice things.">make it bloom <span aria-hidden="true">↗</span></button>
+              <p class="card-message" aria-live="polite"></p>
+            </article>
+            <article class="garden-card garden-card-blue">
+              <div class="garden-number">03</div>
+              <div class="tulip tulip-coral" aria-hidden="true"><span class="tulip-bloom"></span><span class="tulip-stem"></span><span class="tulip-leaf leaf-left"></span><span class="tulip-leaf leaf-right"></span></div>
+              <h3>You never have<br />to carry it alone.</h3>
+              <button class="text-button bloom-button" type="button" data-message="There is always a hand reaching back for yours.">make it bloom <span aria-hidden="true">↗</span></button>
+              <p class="card-message" aria-live="polite"></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="notes-section section-pad" id="notes" aria-labelledby="notes-title">
+          <div class="notes-heading">
+            <div class="section-kicker">02 / from the penguin post</div>
+            <span class="notes-stamp" aria-hidden="true">SEALED<br />WITH<br />CARE</span>
+          </div>
+          <div class="notes-layout">
+            <div class="notes-title-wrap">
+              <h2 id="notes-title">Tiny notes<br /><em>for your pocket.</em></h2>
+              <p class="notes-subtitle">No big speeches. Just a few true things, folded up small.</p>
+            </div>
+            <div class="note-stack">
+              <button class="note note-cream" type="button" aria-expanded="false">
+                <span class="note-icon" aria-hidden="true">✦</span><span class="note-label">note 01 / a truth</span><span class="note-title">You make ordinary days feel special.</span><span class="note-open">open <span aria-hidden="true">+</span></span><span class="note-hidden">The way you care, notice, laugh, and show up is quietly magic. Please don’t forget that.</span>
+              </button>
+              <button class="note note-rose" type="button" aria-expanded="false">
+                <span class="note-icon" aria-hidden="true">♡</span><span class="note-label">note 02 / a permission slip</span><span class="note-title">You may take up space here.</span><span class="note-open">open <span aria-hidden="true">+</span></span><span class="note-hidden">You don’t need to be smaller, easier, or less feeling. Bring your whole heart. It fits.</span>
+              </button>
+              <button class="note note-blue" type="button" aria-expanded="false">
+                <span class="note-icon" aria-hidden="true">✿</span><span class="note-label">note 03 / a promise</span><span class="note-title">The heavy feeling will move.</span><span class="note-open">open <span aria-hidden="true">+</span></span><span class="note-hidden">Maybe not all at once. But it will. Until then, we can be gentle and take the next tiny step together.</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="waddle-section section-pad" aria-labelledby="waddle-title">
+          <div class="waddle-card">
+            <div class="waddle-copy">
+              <div class="section-kicker">03 / urgent penguin bulletin</div>
+              <h2 id="waddle-title">A penguin<br /><em>has waddled in.</em></h2>
+              <p>He says you’re doing a wonderful job, and he would like you to know that snacks, naps, and being held are all medically recommended.</p>
+              <button class="button button-dark" id="waddle-button" type="button">encourage the waddle <span aria-hidden="true">→</span></button>
+              <p class="waddle-status" id="waddle-status" aria-live="polite">currently standing by with one tiny tulip</p>
+            </div>
+            <div class="waddle-stage" aria-label="Interactive penguin scene">
+              <span class="stage-scribble scribble-one" aria-hidden="true">waddle<br />waddle</span>
+              <div class="stage-cloud cloud-one" aria-hidden="true"></div><div class="stage-cloud cloud-two" aria-hidden="true"></div>
+              <div class="stage-penguin" id="stage-penguin" aria-hidden="true"><span class="stage-scarf"></span><span class="stage-eye eye-left"></span><span class="stage-eye eye-right"></span><span class="stage-beak"></span><span class="stage-belly"></span><span class="stage-foot foot-left"></span><span class="stage-foot foot-right"></span><span class="stage-tulip"></span></div>
+              <span class="stage-flower stage-flower-one" aria-hidden="true">✿</span><span class="stage-flower stage-flower-two" aria-hidden="true">✽</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="closing section-pad" aria-labelledby="closing-title">
+          <div class="closing-flower" aria-hidden="true">✿</div>
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> one last thing</p>
+          <h2 id="closing-title">Nishu, you are<br /><em>so deeply cherished.</em></h2>
+          <p class="closing-copy">On the bright days, on the blurry days, on the days where all you can do is breathe — you are still precious, still held, still someone’s favorite person.</p>
+          <button class="button button-primary button-closing" id="final-button" type="button">keep this little reminder <span aria-hidden="true">♡</span></button>
+          <p class="closing-signoff">with tulips, penguins &amp; all my love <span aria-hidden="true">✳</span></p>
+        </section>
+      </main>
+
+      <footer class="footer"><span>for nishu, always.</span><span aria-hidden="true">✿ &nbsp; ♥ &nbsp; ✿</span><span>made for soft days</span></footer>
+    </div>
+    <div class="heart-burst" id="heart-burst" aria-hidden="true"></div>
+    <div class="scribble-status" id="scribble-status" role="status" aria-live="polite"></div>
+    <script src="/script.js"></script>
+  </body>
+</html>
